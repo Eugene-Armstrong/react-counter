@@ -25,10 +25,10 @@ class Counter extends Component{
     this.state = {count : 0};
   }
   add = () => {
-    this.setState({count:this.state.count++});
+    this.setState({count:this.state.count+1});
   }
   remove = () => {
-    this.setState({count:this.state.count--});
+    this.setState({count:this.state.count-1});
   }
   render(){
     return(
