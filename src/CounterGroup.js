@@ -8,7 +8,7 @@ export default class CounterGroup extends Component {
     sum = (s) =>{
         this.setState({sum:s+this.state.sum})
     }
-    countAll(){
+    countAll(){console.log(123456);
         var buttonLists = [], counterNum = this.props.size, i;
         for (i = 0; i < counterNum; i = i + 1) {
             buttonLists.push(<Counter s={this.sum}/>);
